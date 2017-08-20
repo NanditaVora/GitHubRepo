@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+
+<script type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script type="text/javascript" 
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js" ></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="service/userservice.js"></script>
+<!-- <script type="text/javascript" src="js/controller.js"></script> -->
+<script type="text/javascript" src="controller/usercontroller.js"></script>
+
+
+</head>
+<body ng-app="app">
+<a href="#/home">Home</a> &nbsp;
+<a href="#/login">{{signinstatus}}</a> &nbsp; 
+<!-- <a href="#/getallusers"> Get All Users</a> &nbsp; -->
+<a href="#/saveuser">Add New User</a>
+
+
+ <hr>
+    <div ng-view></div>
+
+
+</body>
+
+</html>
